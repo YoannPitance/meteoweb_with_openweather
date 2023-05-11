@@ -31,6 +31,10 @@ body {
   background-image: url('./assets/snowy.jpg');
 }
 
+.app.thunder{
+  background-image: url('./assets/thunder.jpg');
+}
+
 main{
   min-height: 100vh;
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.75));

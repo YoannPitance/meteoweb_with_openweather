@@ -60,6 +60,16 @@ function App() {
         typeof weather.main != "undefined"
           ? weather.weather[0].main === "Clear"
             ? "app clear"
+            : weather.weather[0].main === "Clouds"
+            ? "app clouds"
+            : weather.weather[0].main === "Rain" ||
+              weather.weather[0].main === "Drizzle"
+            ? "app rain"
+            : weather.weather[0].main === "Snow" ||
+              weather.weather[0].main === "Sleet"
+            ? "app snow"
+            : weather.weather[0].main === "Thunderstorm"
+            ? "app thunder"
             : "app"
           : "app"
       }
